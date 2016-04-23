@@ -13,7 +13,7 @@ The client walks the configured directories tracking any deletions, updates, or 
 
 ##Server
 
-The server receives SHA256 checksums from the client and accepts uploads for blobs it hasn't seen before.  Then applies a reed-solomon error correction code to generate chunks that are traded with other peers.  The server works to ensure the specified replication is maintained and periodically challenges other peers to ensure they are storing the agreed upon chunks.
+The server receives SHA256 checksums from the client and accepts uploads for blobs it hasn't seen before.  Then applies a reed-solomon error correction code to generate chunks, which are traded with other peers.  The server works to ensure the specified replication is maintained and periodically challenges other peers to ensure they are storing the agreed upon chunks.
 
 ##DHT
 The DHT allows (if desired) the finding of other peers to trade chunks with.
