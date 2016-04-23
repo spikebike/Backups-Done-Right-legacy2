@@ -1,5 +1,5 @@
 # Backups-Done-Right
-Backups-Done-Right (BDR) is a p2p backup system allowing the trading of local space for offsite backups.  The general idea is that you tell BDR which directories to backup, set a few basic settings, and tell BDR how much space it can use to trade.  From then on it should be self maintaining and will notify the user of problems.
+Backups-Done-Right (BDR) is a p2p backup system allowing the trading of local storage for offsite backups.  The general idea is that you tell BDR which directories to backup, set a few basic settings, and tell BDR how much space it can use to trade.  From then on it should be self maintaining and will notify the user of problems.
 
 
 ## Table of Contents
