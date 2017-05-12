@@ -6,9 +6,9 @@
 
 ## Overview
 
-BDR ([Backups Done Right] is a backup program that allows trading local disk space for remote disk space to allow offsite backups with minimal cost.  So 1TB of local disk space could used to allow 4 copies of 250GB to be backed up remotely.
+BDR (Backups Done Right) is a backup program that allows trading local disk space for remote disk space to allow offsite backups with minimal cost.  So this allows trading of local disk space (disks can be less than $50 per TB) for valuable offsite backups.
 
-The default configuration should work for most users, but plenty of settings will alow changing the defaults.
+The default configuration should work for most users and theres just a few simple commands to get started.  More advanced users can adjust things as needed.
 
 Encryption is done on the client, and no recovery mechanisms are provided for.  Loss of the password results in loss of data.  Please act accordingly.
 
@@ -16,9 +16,9 @@ Encryption is done on the client, and no recovery mechanisms are provided for.  
 
 Each client finds any new, changed, or deleted files in any of the configured directories.  The updated files are checksummed, encrypted into blobs, and checksummed again.  Blobs are queued for upload to a blob server.
 
-The blob server tracks what blobs it already has and when a client offers a blob it's replies with "upload" or "I have that, I'll subscribe you to that blob".  It's the blob servers job to manage the blobs, and ensure that the desired replication is met, or to inform the admin otherwise.
+The blob server tracks what blobs it already has and when a client offers a blob it's replies with "upload and subscribe" or "I have that, I'll subscribe you to that blob".  It's the blob servers job to manage the blobs, and ensure that the desired replication is met, or to inform the admin otherwise.
 
-The blob server can be configured to require manual introduction of peers, o to search for new peers with a DHT.  This allows automatically finding new peers to trade blobs with.
+The blob server can be configured to require manual introduction of peers, or to search for new peers with a DHT.  This allows automatically finding new peers to trade blobs with.
 
 The blob server:
 - accepts blob uploads from trusted clients, if blobs hasn't been seen
