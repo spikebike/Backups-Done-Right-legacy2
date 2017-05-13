@@ -1,0 +1,36 @@
+#########################################################
+#							#
+#	THIS IS JUST AN EXAMPLE FILE!			#
+#	YOU MUST CHANGE THE PATHS TO YOUR SETUP!	#
+#							#
+#########################################################
+
+
+[Client]
+private_key = "../certs/client.key"
+public_key = "../certs/client.pem"
+backup_dirs = [ "/home", "/root", "/etc" ]
+exclude_dirs = [".git",".cache", "tmp"]	# don't backup these directories and their childrens <fullpath / dirname>
+threads = 4
+sql_file = "../etc/fsmeta.sql"
+server = "127.0.0.1"
+purge_deleted_files = 30 #days
+queue_blobs = "/tmp/bdr"
+notify_email = "mail@example.com"
+server_port=8000
+
+[Server]
+#private_key = /home/bill/src/go/Backups-Done-Right/certs/server.key
+#public_key = /home/bill/src/go/Backups-Done-Right/certs/server.pem
+private_key = "../certs/server.key"
+public_key = "../certs/server.pem"
+minimum_number_of_hops = 2 # avoid peers too local
+sql_file = "../etc/blob-peer-meta.sql"
+local_store = "../blobs"
+notify_email = "mail@example.com"
+threads = 4
+contract_grace_period = 48 # hours.  The time that you agree to store blobs even if the peer disappears.
+keep_files_for = 28 # days
+keep_local_copy_of_all_blobs = true # costs more disk, less reliant on peers
+server_port=8000
+
