@@ -6,7 +6,7 @@
 
 ## Overview
 
-BDR (Backups Done Right) is a backup program that allows trading local disk space for remote disk space to allow offsite backups with minimal cost.  So this allows trading of local disk space (disks can be less than $50 per TB and warrantied for 3-5 years) for valuable offsite backups.
+BDR (Backups Done Right) is a backup program that allows trading local disk space for remote disk space to allow offsite backups with minimal cost.  So this allows trading of local disk space (disks can be less than $30 per TB and warrantied for 3-5 years) for valuable offsite backups.
 
 The default configuration should work for most users and theres just a few simple commands to get started.  More advanced users can adjust things as needed.
 
